@@ -19,3 +19,6 @@ Tests are labels with @DisplayName("specification-based") or ("structural-based"
 2. Use mvn clean, then mvn compile, and finally mvn test
 3. After running mvn test, it will output a folder under jacoco called index.html
 Once you open the index.html file, you will see the coverage results.
+
+## Part #2
+![Build Status](https://github.com/vader96/Assignment6/actions/workflows/SE333_CI.yml/badge.svg)
