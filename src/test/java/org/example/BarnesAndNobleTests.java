@@ -1,4 +1,4 @@
-package org.example.Barnes.UT;
+package org.example;
 
 import org.example.Barnes.*;
 import org.junit.jupiter.api.BeforeEach;
