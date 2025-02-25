@@ -19,10 +19,10 @@ jobs:
           architecture: x64
 
       - name: Install Linter
-        run: mvn dependency:go-offline
+        run: mvn checkstyle:checkstyle
 
       - name: Run Checkstyle
-        run: mvn clean site
+        run: mvn checkstyle:checkstyle
 
       - name: Upload Checkstyle Result
         uses: actions/upload-artifact@v4
