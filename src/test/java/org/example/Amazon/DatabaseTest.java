@@ -48,4 +48,11 @@ public class DatabaseTest {
         database.close(); // This closes the connection and sets to null
         assertDoesNotThrow(() -> database.close()); // Calling close again should not throw an exception, and should return null.
     }
+
+    @Test
+    @DisplayName("structural-based")
+    void testResetDatabaseWithNullConnection() {
+        database.close(); // Ensures connection is null
+        assertDoesNotThrow(() -> database.resetDatabase()); // resetDatabase should not throw an exception, and should skip the conditional check
+    }
 }
